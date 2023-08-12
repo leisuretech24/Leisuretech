@@ -227,5 +227,41 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const spinner = document.getElementById("spinner");
+  const button = document.querySelector(".btn-outline-warning"); // Change this selector to match your button
+
+  button.addEventListener("click", function () {
+    spinner.style.display = "flex"; // Show the spinner
+
+    // You can also simulate a delay here using setTimeout if you want
+    // For example: setTimeout(function () { spinner.style.display = "none"; }, 3000);
+
+    window.addEventListener("load", function () {
+      spinner.style.display = "none"; // Hide the spinner when the page finishes loading
+    });
+  });
+});
+
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const spinner = document.getElementById("spinner");
+  const button = document.querySelector(".card-body"); // Change this selector to match your button
+
+  button.addEventListener("click", function () {
+    spinner.style.display = "flex"; // Show the spinner
+
+    // You can also simulate a delay here using setTimeout if you want
+    // For example: setTimeout(function () { spinner.style.display = "none"; }, 3000);
+
+    window.addEventListener("load", function () {
+      spinner.style.display = "none"; // Hide the spinner when the page finishes loading
+    });
+  });
+});
+
+    </script>
   </body>
 </html>
