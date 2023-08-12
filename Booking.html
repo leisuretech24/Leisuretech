@@ -287,5 +287,22 @@ src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"
 });
 
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const spinnerOverlay = document.querySelector(".spinner-overlay");
+        const cards = document.querySelectorAll(".card");
+    
+        cards.forEach(function (card) {
+          card.addEventListener("click", function () {
+            spinnerOverlay.style.display = "flex"; // Show the spinner
+    
+            // Simulate a delay for demonstration purposes
+            setTimeout(function () {
+              spinnerOverlay.style.display = "none"; // Hide the spinner after a delay
+            }, 2000); // Change the delay time as needed
+          });
+        });
+      });
+    </script>
   </body>
 </html>
